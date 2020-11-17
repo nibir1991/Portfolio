@@ -6,7 +6,7 @@ margin:0;
 }
 #no-padding{padding:0 0 !important;}
 #no-margin{margin:0 0 !important;}
-
+.container {padding-top:50px;}
 /* --------------------- Navbar CSS -------------*/
 
 .navbar{
@@ -25,14 +25,14 @@ margin:0;
     height:auto;
 }
 .header{
-    padding:20px; 
-    text-align:left;
+    padding: 50px; 
+    text-align:center;
 }
 .header h1 {
-    color:#1a029e; font-family:'Monoton', cursive; font-weight:600;
+    color:#1a029e; font-family:'Goldman', cursive; font-weight:600; letter-spacing: 1.5;
 }
 .shape-card{
-    background:#000000; 
+    background:#1789df; 
     border:5px solid #6dc92e;
      border-radius:50%;
       height:250px; width:250px;
@@ -47,14 +47,7 @@ margin:0;
     color:#fff; font-weight:400; 
     font-family:'Monoton', cursive; 
     border-radius:50%;
-    text-shadow: 0 0 10px #000,
-                 0 0 20px #000,
-                 0 0 30px #000,
-                 0 0 40px #910d46,
-                 0 0 70px #910d46,
-                 0 0 80px #910d46,
-                 0 0 100px #910d46,
-                 0 0 150px #910d46;
+   
     transition: all 0.1s;  
     cursor:pointer;           
 }
@@ -73,15 +66,15 @@ margin:0;
 
 }
 
-.skill-row{padding-top:150px;}
+
 .skills{position:relative;
         display:flex;
         margin:20px 0;
     padding: 10px;
-    background-image: linear-gradient(#616161 0%, #333 10%, #222);
+    background: rgba(17, 47, 216, 0.329);
     border-radius:8px;
     overflow:hidden;
-    border:2px solid #000;
+    border:2px solid rgb(17, 0, 248);
     transition: 0.5s;
  }
  .skill-row:hover .skills{
@@ -215,24 +208,21 @@ background:linear-gradient(45deg, #1fe6ff, #673ab7);
 }
 
 /* --------------------- Service CSS -------------*/
-.card {
+.card-service {
     
     
     width: 100%;
     min-height: 90px;
     cursor: pointer;
-    padding: 15px;
+    padding: 20px;
     border: 3px solid var(--primary);
-    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
-          20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
-          30px -30px 0 -3px var(--background), 30px -30px var(--orange),
-          40px -40px 0 -3px var(--background), 40px -40px var(--red);
+    box-shadow: 10px -10px 0 -3px #e5efec63, 10px -10px #dae0d938, 20px -20px 0 -3px #f7f9f800, 20px -20px #d2d0ca54, 30px -30px 0 -3px #e3eae85c, 30px -30px #f1f1f11f, 40px -40px 0 -3px #d3e6e130, 40px -40px #efe6e60d;
           margin-top:20px;
 
     background:rgba(184, 181, 181, 0.603);      
   }
   
-  .card:hover {
+  .card-service:hover {
     animation: shadow-wave 1s ease infinite;
   }
   
@@ -294,18 +284,50 @@ background:linear-gradient(45deg, #1fe6ff, #673ab7);
     --red: #FF5555;
   } 
   
-  .card p {
+  .card-service p {
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 10px;
     font-weight:bold;
-    padding:20px;
+    padding:10px;
   }
   
-  .card h2 {
+  .card-service h2 {
     font-size: 20px;
     font-family: "Archivo Black", "Archivo", sans-serif;
     font-weight: normal;
     padding:20px;
     background:rgba(184, 181, 181, 0.637);
   }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    }
+    .card-image
+    {height:300px; width:100%; overflow:hidden; position:relative;}
+    .card-img-top{position:absolute; left:0; top:0; transition:all 5s ease-in;}
+    .card-image:hover .card-img-top {left:0; transform:translateY(-75%);}
+
+    .card-body{background:#000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
