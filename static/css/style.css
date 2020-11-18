@@ -210,16 +210,14 @@ background:linear-gradient(45deg, #1fe6ff, #673ab7);
 /* --------------------- Service CSS -------------*/
 .card-service {
     
-    
+  border: 4px solid rgba(255, 255, 255, 0.034);
     width: 100%;
     min-height: 90px;
     cursor: pointer;
     padding: 20px;
-    border: 3px solid var(--primary);
-    box-shadow: 10px -10px 0 -3px #e5efec63, 10px -10px #dae0d938, 20px -20px 0 -3px #f7f9f800, 20px -20px #d2d0ca54, 30px -30px 0 -3px #e3eae85c, 30px -30px #f1f1f11f, 40px -40px 0 -3px #d3e6e130, 40px -40px #efe6e60d;
-          margin-top:20px;
-
-    background:rgba(184, 181, 181, 0.603);      
+    background:rgba(184, 181, 181, 0.603); 
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;     
   }
   
   .card-service:hover {
@@ -229,46 +227,28 @@ background:linear-gradient(45deg, #1fe6ff, #673ab7);
   
   @keyframes shadow-wave {
     0% {
-      border: 3px solid var(--primary);
-      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
-        20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
-        30px -30px 0 -3px var(--background), 30px -30px var(--orange),
-        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+      border: 4px solid var(--primary);
+      
     }
     20% {
-      border: 3px solid var(--red);
-      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--primary),
-        20px -20px 0 -3px var(--background), 20px -20px var(--green),
-        30px -30px 0 -3px var(--background), 30px -30px var(--yellow),
-        40px -40px 0 -3px var(--background), 40px -40px var(--orange);
+      border: 4px solid var(--red);
+      
     }
     40% {
-      border: 3px solid var(--orange);
-      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--red),
-        20px -20px 0 -3px var(--background), 20px -20px var(--primary),
-        30px -30px 0 -3px var(--background), 30px -30px var(--green),
-        40px -40px 0 -3px var(--background), 40px -40px var(--yellow);
+      border: 4px solid var(--orange);
+      
     }
     60% {
-      border: 3px solid var(--yellow);
-      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--orange),
-        20px -20px 0 -3px var(--background), 20px -20px var(--red),
-        30px -30px 0 -3px var(--background), 30px -30px var(--primary),
-        40px -40px 0 -3px var(--background), 40px -40px var(--green);
+      border: 4px solid var(--yellow);
+      
     }
     80% {
-      border: 3px solid var(--green);
-      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--yellow),
-        20px -20px 0 -3px var(--background), 20px -20px var(--orange),
-        30px -30px 0 -3px var(--background), 30px -30px var(--red),
-        40px -40px 0 -3px var(--background), 40px -40px var(--primary);
+      border: 4px solid var(--green);
+      
     }
     100% {
-      border: 3px solid var(--primary);
-      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
-        20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
-        30px -30px 0 -3px var(--background), 30px -30px var(--orange),
-        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+      border: 4px solid var(--primary);
+      
     }
     
   }
@@ -311,7 +291,7 @@ background:linear-gradient(45deg, #1fe6ff, #673ab7);
     .card-image
     {height:300px; width:100%; overflow:hidden; position:relative;}
     .card-img-top{position:absolute; left:0; top:0; transition:all 5s ease-in;}
-    .card-image:hover .card-img-top {left:0; transform:translateY(-75%);}
+    .card-image:hover .card-img-top {left:0; transform:translateY(-95%);}
 
     .card-body{background:#000;}
 
