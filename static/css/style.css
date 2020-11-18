@@ -10,9 +10,9 @@ margin:0;
 /* --------------------- Navbar CSS -------------*/
 
 .navbar{
-    background-image: linear-gradient(to right, #000002 , #37384a,#000002); color:#ffffff;}
-    .fa-bars{color:#ffffff;}
-
+    background:none; position:fixed; width:100%; font: outline; font-size:30px; z-index: +999;}
+.fa-bars{color:#ffffff;}
+.nav-link {color:#000;}
 .container-fluid{padding-left:0; padding-right:0;}
 
 /* --------------------- Banner CSS -------------*/
@@ -25,7 +25,7 @@ margin:0;
     height:auto;
 }
 .header{
-    padding: 50px; 
+    padding: 100px 0; 
     text-align:center;
 }
 .header h1 {
@@ -210,12 +210,12 @@ background:linear-gradient(45deg, #1fe6ff, #673ab7);
 /* --------------------- Service CSS -------------*/
 .card-service {
     
-  border: 4px solid rgba(255, 255, 255, 0.034);
+  border: 5px solid rgba(255, 255, 255, 0.034);
     width: 100%;
     min-height: 90px;
     cursor: pointer;
     padding: 20px;
-    background:rgba(184, 181, 181, 0.603); 
+    background:rgb(30 74 234 / 46%); 
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;     
   }
@@ -227,27 +227,27 @@ background:linear-gradient(45deg, #1fe6ff, #673ab7);
   
   @keyframes shadow-wave {
     0% {
-      border: 4px solid var(--primary);
+      border: 5px solid var(--primary);
       
     }
     20% {
-      border: 4px solid var(--red);
+      border: 5px solid var(--red);
       
     }
     40% {
-      border: 4px solid var(--orange);
+      border: 5px solid var(--orange);
       
     }
     60% {
-      border: 4px solid var(--yellow);
+      border: 5px solid var(--yellow);
       
     }
     80% {
-      border: 4px solid var(--green);
+      border: 5px solid var(--green);
       
     }
     100% {
-      border: 4px solid var(--primary);
+      border: 5px solid var(--primary);
       
     }
     
@@ -288,22 +288,101 @@ background:linear-gradient(45deg, #1fe6ff, #673ab7);
     text-align: center;
     font-size: 18px;
     }
+    .card-body{padding:5px 0;}
     .card-image
-    {height:300px; width:100%; overflow:hidden; position:relative;}
+    {height:350px; width:100%; overflow:hidden; position:relative; border:4px solid rgba(34, 34, 243, 0.705); 
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
     .card-img-top{position:absolute; left:0; top:0; transition:all 5s ease-in;}
     .card-image:hover .card-img-top {left:0; transform:translateY(-95%);}
+    .card{background:none; border:none;}
+    .card-title,.card-text {background:rgba(250, 250, 250, 0.226); padding:5px; color:rgb(0, 0, 0);}
+    .portfolio-btn{color:rgb(0, 0, 0);background:rgba(250, 250, 250, 0.226);}
+    
+    .testimonial{
+      border-right: 4px solid #2A3D7D;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px 30px 30px 130px;
+      margin: 0 15px 30px 15px;
+      overflow: hidden;
+      position: relative;
+  }
+  .testimonial:before{
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: -17px;
+      border-top: 25px solid #29D18B;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      transform: rotate(45deg);
+  }
+  .testimonial:after{
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -17px;
+      border-top: 25px solid #29D18B;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      transform: rotate(135deg);
+  }
+  .testimonial .pic{
+      display: inline-block;
+      width: 80px;
+      height: 90px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: absolute;
+      top: 60px;
+      left: 20px;
+  }
+  .testimonial .pic img{
+      width: 100%;
+      height: auto;
+  }
+  .testimonial .description{
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: #000000;
+      margin-bottom: 15px;
+      background:rgb(30 74 234 / 46%);
+  }
+  .testimonial .title{
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #29D18B;
+      margin: 0;
+  }
+  .testimonial .post{
+      display: inline-block;
+      font-size: 17px;
+      color: #29D18B;
+      font-style:italic;
+  }
 
-    .card-body{background:#000;}
+  
+  @media only screen and (max-width: 767px){
+      .testimonial{
+          padding: 20px;
+          text-align: center;
+      }
+      .testimonial .pic{
+          display: block;
+          position: static;
+          margin: 0 auto 15px;
+      }
+  }
 
 
-
-
-
-
-
-
-
-
+.container{padding:100px 0;}
 
 
 

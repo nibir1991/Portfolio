@@ -115,9 +115,9 @@
 </div>
    <div class='col-md-4'>
   
-    <div class="profile-pic">
-    <img src="{% static 'images/profile.png' %}">
-    </div>
+ <!---   <div class="profile-pic">
+    <img src="{% static 'images/profile.png' %}"> 
+    </div>-->
    </div>
 </div>
 </div>
@@ -201,9 +201,9 @@
                 <img class="card-img-top"src="{{ i.website_pic.url }}" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">{{ i.name}}</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="{{ i.website_url}}" class="btn btn-primary" target="blank">Visit Now</a>
+                    <h5 class="card-title"><i class="fas fa-tv"></i>&nbsp; {{ i.name}}</h5>
+                    <p class="card-text">{{ i.category}}</p>
+                    <a href="{{ i.website_url}}" class="btn portfolio-btn btn-block" target="blank"><i class="fas fa-link"></i>&nbsp;Visit Now</a>
                 </div>
                 </div>
 
@@ -224,14 +224,66 @@
 
 </div>
 
-<!--------------  Third Container End             -->
+<!-- Third Container End  -->
 
 
+<!-- Fourth Container Start  -->
+
+<div class="container">
+    <div class="section-header"><h4>Client Review</h4></div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+    
+        
+        <div class="carousel-item active">
 
 
+            <div class="testimonial">
+                            <div class="pic">
+                                <img src="{{review.0.client_pic.url}}">
+                            </div>
+                            <p class="description">
+                                {{review.0.description}}
+                            </p>
+                            <h3 class="title">{{review.0.name}}</h3>
+                            <small class="post">- {{review.0.post}}</small>
+            </div>
+
+        </div>
+        
+
+    {% for i in review|slice:"1:" %}
+        <div class="carousel-item">
 
 
+            <div class="testimonial">
+                            <div class="pic">
+                                <img src="{{i.client_pic.url}}">
+                            </div>
+                            <p class="description">
+                                {{i.description}}
+                            </p>
+                            <h3 class="title">{{i.name}}</h3>
+                            <small class="post">- {{i.post}}</small>
+            </div>
 
+        </div>
+    {%endfor%}
+  
+</div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>
+
+<!-- Fourth Container End  -->
 
 </div> <!--- Container Fluid End -->
 </section>
