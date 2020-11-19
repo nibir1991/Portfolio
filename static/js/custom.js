@@ -1,3 +1,8 @@
+$(window).on('load',function(){
+  $('.loader-container').hide(1000);
+  
+  });
+
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
     spaceBetween: 30,
