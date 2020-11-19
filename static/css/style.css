@@ -473,3 +473,23 @@ footer{background:#424242; border-top:1px solid rgba(255, 255, 255, 0.377); padd
 .follow-us,.address, .newsletter p{font-size:18px;}
 h6{font-size:25px;}
 .input-group{padding:20px 10px;}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    
+    .shape-card{height:200px; width:200px;}
+    .card-service{margin-top:10px;}
+    .card-image { height:200px;}
+    .card-title,.card-text{font-size:13px;}
+
+     
+
+
+
+
+}
